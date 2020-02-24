@@ -1,6 +1,21 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
 public class Main {
 	
-	public static void main(String[] args){	
-		System.out.println("\u250C\u252C\u2510\n\u251C\u253C\u2524\n\u2514\u2534\u2518");
+	public static void main(String[] args) throws NumberFormatException, IOException{	
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		 
+        int n = Integer.parseInt(br.readLine());
+        
+        bw.write(n+"\n");
+        
+        bw.flush();
+        bw.close();
+        br.close();
 	}
 }
