@@ -12,13 +12,13 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-        int a,b;
+        char x,y;
         
-        a = Integer.parseInt(st.nextToken());
-        b = Integer.parseInt(st.nextToken());
+        x = st.nextToken().charAt(0);
+        y = st.nextToken().charAt(0);
         
         
-        bw.write(a+" "+b);
+        bw.write(y+" "+x);
         
         bw.flush();
         bw.close();
