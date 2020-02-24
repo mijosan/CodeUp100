@@ -9,19 +9,20 @@ public class Main {
 	
 	public static void main(String[] args) throws NumberFormatException, IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
 		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
-        float f;
-        
-        f = Float.valueOf(br.readLine());
-        
-    
-        
-        bw.write(String.format("%.2f", f));
-        
-        bw.flush();
-        bw.close();
+		int n = Integer.parseInt(br.readLine());
+		
+		for(int i=0;i<3;i++) {
+			System.out.print(n);
+			
+			if(i!=2) {
+				System.out.print(" ");
+			}
+		}
+   
         br.close();
 	}
 }
+
