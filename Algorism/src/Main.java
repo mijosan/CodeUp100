@@ -12,17 +12,10 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int n = Integer.parseInt(br.readLine());
+		String n = br.readLine();
 		
-		for(int i=0;i<3;i++) {
-			System.out.print(n);
-			
-			if(i!=2) {
-				System.out.print(" ");
-			}
-		}
+		System.out.println(n);
    
         br.close();
 	}
 }
-
