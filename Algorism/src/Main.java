@@ -10,10 +10,12 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		 
-        char x;
+        float x;
         
-        x = br.readLine().charAt(0);
-        bw.write(x+"\n");
+        x = Float.valueOf(br.readLine());
+        
+        String x6 = String.format("%.6f",x);
+        bw.write(x6+"\n");
         
         bw.flush();
         bw.close();
