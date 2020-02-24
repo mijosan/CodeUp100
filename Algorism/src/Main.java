@@ -10,9 +10,10 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		 
-        int n = Integer.parseInt(br.readLine());
+        char x;
         
-        bw.write(n+"\n");
+        x = br.readLine().charAt(0);
+        bw.write(x+"\n");
         
         bw.flush();
         bw.close();
