@@ -3,19 +3,22 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 public class Main {
 	
 	public static void main(String[] args) throws NumberFormatException, IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		 
-        float x;
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+        int a,b;
         
-        x = Float.valueOf(br.readLine());
+        a = Integer.parseInt(st.nextToken());
+        b = Integer.parseInt(st.nextToken());
         
-        String x6 = String.format("%.6f",x);
-        bw.write(x6+"\n");
+        
+        bw.write(a+" "+b);
         
         bw.flush();
         bw.close();
