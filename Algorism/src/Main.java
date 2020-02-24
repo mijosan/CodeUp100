@@ -10,15 +10,15 @@ public class Main {
 	public static void main(String[] args) throws NumberFormatException, IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
-        char x,y;
+        float f;
         
-        x = st.nextToken().charAt(0);
-        y = st.nextToken().charAt(0);
+        f = Float.valueOf(br.readLine());
         
+    
         
-        bw.write(y+" "+x);
+        bw.write(String.format("%.2f", f));
         
         bw.flush();
         bw.close();
