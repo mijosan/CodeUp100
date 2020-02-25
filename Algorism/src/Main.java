@@ -13,16 +13,14 @@ public class Main {
 		
 		int n = Integer.parseInt(br.readLine());
 		
-		if(n>0) {
-			System.out.println("plus");
+		if(n>=90) {
+			System.out.println("A");
+		}else if(n>=70 && n<=89){
+			System.out.println("B");
+		}else if(n>=40 && n<=69) {
+			System.out.println("C");
 		}else {
-			System.out.println("minus");
-		}
-		
-		if(n%2==0) {
-			System.out.println("even");
-		}else {
-			System.out.println("odd");
+			System.out.println("D");
 		}
 		
         br.close();
