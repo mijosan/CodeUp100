@@ -8,11 +8,9 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		//StringTokenizer st = new StringTokenizer(br.readLine(),"-");
+		StringTokenizer st = new StringTokenizer(br.readLine(),".");
 		
-		String str = br.readLine();
-		
-		System.out.println(str);
+		System.out.println(st.nextToken() + "\n" + st.nextToken());
 		
    
         br.close();
