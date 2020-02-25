@@ -10,9 +10,9 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine(),".");
 		
-		Double n = Double.parseDouble(br.readLine());
+		Long n = Long.parseLong(br.readLine());
 		
-		System.out.println(String.format("%.11f", n));
+		System.out.println(n);
 		
         br.close();
 	}
