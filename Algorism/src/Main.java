@@ -12,7 +12,7 @@ public class Main {
 		
 		int n = Integer.parseInt(br.readLine());
 		
-		System.out.println(Integer.toOctalString(n));
+		System.out.println(Integer.toHexString(n));
 		
         br.close();
 	}
