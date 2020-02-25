@@ -17,13 +17,17 @@ public class Main {
 		
 		int c = Integer.parseInt(st.nextToken());
 		
-		if(a<b && a<c) {
+		if(a%2 == 0) {
 			System.out.println(a);
-		}else if(b<a && b<c){
+		}
+		if(b%2 == 0) {
 			System.out.println(b);
-		}else {
+		}
+		if(c%2 == 0) {
 			System.out.println(c);
 		}
+		
+		
 		
         br.close();
 	}
