@@ -8,10 +8,13 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine(),"-");
+		//StringTokenizer st = new StringTokenizer(br.readLine(),"-");
 		
-		System.out.println(st.nextToken()+st.nextToken());
+		char[] data = br.readLine().toCharArray();	
 		
+		for(char i:data) {
+			System.out.print(i);
+		}
 		
    
         br.close();
