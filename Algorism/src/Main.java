@@ -10,12 +10,9 @@ public class Main {
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		Long a = Long.parseLong(st.nextToken());
-		
-		Long b = Long.parseLong(st.nextToken());
-		
-		System.out.println(a+b);
-		
+		Long a = Long.parseLong(st.nextToken())*-1;
+			
+		System.out.println(a);
 		
         br.close();
 	}
