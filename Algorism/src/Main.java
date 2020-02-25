@@ -10,9 +10,9 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine(),".");
 		
-		Long n = Long.parseLong(br.readLine());
+		int n = Integer.parseInt(br.readLine());
 		
-		System.out.println(n);
+		System.out.println(Integer.toOctalString(n));
 		
         br.close();
 	}
