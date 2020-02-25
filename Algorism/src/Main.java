@@ -8,17 +8,13 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		
-		Long a = Long.parseLong(st.nextToken());
+		Long a = Long.parseLong(br.readLine());
 		
-		Long b = Long.parseLong(st.nextToken());
+		System.out.println(a<<1);
 		
-		Long c = Long.parseLong(st.nextToken());
-		
-		System.out.println(a+b+c);
-		System.out.println(String.format("%.1f", ((double)a+b+c)/3));
 		
         br.close();
 	}
