@@ -15,14 +15,10 @@ public class Main {
 		
 		Long b = Long.parseLong(st.nextToken());
 		
+		Long c = Long.parseLong(st.nextToken());
 		
-		
-		System.out.println(a+b);
-		System.out.println(a-b);
-		System.out.println(a*b);
-		System.out.println(a/b);
-		System.out.println(a%b);
-		System.out.println(String.format("%.2f",(double)a/b));
+		System.out.println(a+b+c);
+		System.out.println(String.format("%.1f", ((double)a+b+c)/3));
 		
         br.close();
 	}
