@@ -8,16 +8,11 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine(),".");
+		//StringTokenizer st = new StringTokenizer(br.readLine(),".");
 		
-		String[] str = new String[st.countTokens()];
-
-		for(int i=0;i<str.length;i++) {
-			str[i] = st.nextToken();
-		}
+		Long n = Long.parseLong(br.readLine());
 		
-		System.out.println(str[2] + "-" + str[1] + "-" + str[0]);
-
+		System.out.println(n);
 		
         br.close();
 	}
