@@ -8,17 +8,19 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		//StringTokenizer st = new StringTokenizer(br.readLine());
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		
-		Long a = Long.parseLong(br.readLine());
+		Long a = Long.parseLong(st.nextToken());
 		
-		if(a==0L) {
+		Long b = Long.parseLong(st.nextToken());
+		
+		
+		if(a==1 && b==1) {
 			System.out.println(1);
 		}else {
 			System.out.println(0);
 		}
-
 		
 		
         br.close();
