@@ -15,10 +15,14 @@ public class Main {
 		
 		int b = Integer.parseInt(st.nextToken());
 		
-		if(a>b) {
+		int c = Integer.parseInt(st.nextToken());
+		
+		if(a<b && a<c) {
 			System.out.println(a);
-		}else {
+		}else if(b<a && b<c){
 			System.out.println(b);
+		}else {
+			System.out.println(c);
 		}
 		
         br.close();
