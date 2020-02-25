@@ -8,13 +8,10 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine(),".");
+		StringTokenizer st = new StringTokenizer(br.readLine(),"-");
 		
-		int a = Integer.parseInt(st.nextToken());
-		int b = Integer.parseInt(st.nextToken());
-		int c = Integer.parseInt(st.nextToken());
+		System.out.println(st.nextToken()+st.nextToken());
 		
-		System.out.println(String.format("%04d.%02d.%02d",a,b,c));
 		
    
         br.close();
