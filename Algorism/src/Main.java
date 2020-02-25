@@ -11,23 +11,13 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		
-		int a = Integer.parseInt(st.nextToken());
-		
-		int b = Integer.parseInt(st.nextToken());
-		
-		int c = Integer.parseInt(st.nextToken());
-		
-		if(a%2 == 0) {
-			System.out.println(a);
+		while(st.hasMoreElements()) {
+			if(Integer.parseInt(st.nextToken())%2 == 0) {
+				System.out.println("even");
+			}else {
+				System.out.println("odd");
+			}
 		}
-		if(b%2 == 0) {
-			System.out.println(b);
-		}
-		if(c%2 == 0) {
-			System.out.println(c);
-		}
-		
-		
 		
         br.close();
 	}
