@@ -16,7 +16,7 @@ public class Main {
 		Long b = Long.parseLong(st.nextToken());
 		
 		
-		if(a==1 && b==1) {
+		if(a==1 || b==1) {
 			System.out.println(1);
 		}else {
 			System.out.println(0);
