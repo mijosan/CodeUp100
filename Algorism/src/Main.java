@@ -12,7 +12,7 @@ public class Main {
 		
 		int n = Integer.parseInt(br.readLine());
 		
-		System.out.println(Integer.toHexString(n));
+		System.out.println(Integer.toHexString(n).toUpperCase());
 		
         br.close();
 	}
