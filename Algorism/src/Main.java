@@ -11,23 +11,21 @@ public class Main {
 		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		
-		String str = br.readLine();
+		int n = Integer.parseInt(br.readLine());
 		
-		switch(str) {
-		case "A":
-			System.out.println("best!!!");
+		switch(n) {
+		case 12: case 1: case 2:
+			System.out.println("winter");
 			break;
-		case "B":
-			System.out.println("good!!");
+		case 3: case 4: case 5:
+			System.out.println("spring");
 			break;
-		case "C":
-			System.out.println("run!");
+		case 6: case 7: case 8:
+			System.out.println("summer");
 			break;
-		case "D":
-			System.out.println("slowly~");
+		case 9: case 10: case 11:
+			System.out.println("fall");
 			break;
-		default:
-			System.out.println("what?");
 		}
 		
 		
