@@ -15,7 +15,7 @@ public class Main {
 		
 		Long b = Long.parseLong(st.nextToken());
 		
-		if(a>b) {
+		if(b>=a) {
 			System.out.println(1);
 		}else {
 			System.out.println(0);
