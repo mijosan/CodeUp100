@@ -10,11 +10,9 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine(),"-");
 		
-		char[] data = br.readLine().toCharArray();	
+		String str = br.readLine();
 		
-		for(char i:data) {
-			System.out.print(i);
-		}
+		System.out.println(str);
 		
    
         br.close();
