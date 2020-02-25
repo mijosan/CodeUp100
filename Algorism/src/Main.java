@@ -15,10 +15,11 @@ public class Main {
 		
 		Long b = Long.parseLong(st.nextToken());
 		
-		a = a<<b;
-		
-		System.out.println(a);
-		
+		if(a>b) {
+			System.out.println(1);
+		}else {
+			System.out.println(0);
+		}
 		
         br.close();
 	}
