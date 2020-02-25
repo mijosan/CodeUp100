@@ -10,13 +10,16 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine(),".");
 		
-		char[] str = br.readLine().toCharArray();
+		char[] n = br.readLine().toCharArray();
+
 		
-		for(char a:str) {
-			System.out.println("'" +a+"'");
-		}
+		  for(int i=0;i<n.length;i++) { 
+			  int a = n.length-i+1; 
+			  System.out.println("[" + ((int)(Math.pow(10, a-2)))*(n[i]-'0') + "]"); 
+		  }
+		 
 		
-   
         br.close();
 	}
 }
+
