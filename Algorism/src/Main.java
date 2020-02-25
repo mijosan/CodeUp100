@@ -10,9 +10,9 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine(),".");
 		
-		int n = Integer.parseInt(br.readLine());
+		String oct = br.readLine();
 		
-		System.out.println(Integer.toHexString(n).toUpperCase());
+		System.out.println(Integer.parseInt(oct,8));
 		
         br.close();
 	}
