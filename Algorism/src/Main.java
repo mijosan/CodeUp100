@@ -11,17 +11,25 @@ public class Main {
 		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		
-		int n = Integer.parseInt(br.readLine());
+		String str = br.readLine();
 		
-		if(n>=90) {
-			System.out.println("A");
-		}else if(n>=70 && n<=89){
-			System.out.println("B");
-		}else if(n>=40 && n<=69) {
-			System.out.println("C");
-		}else {
-			System.out.println("D");
+		switch(str) {
+		case "A":
+			System.out.println("best!!!");
+			break;
+		case "B":
+			System.out.println("good!!");
+			break;
+		case "C":
+			System.out.println("run!");
+			break;
+		case "D":
+			System.out.println("slowly~");
+			break;
+		default:
+			System.out.println("what?");
 		}
+		
 		
         br.close();
 	}
