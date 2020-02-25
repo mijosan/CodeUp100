@@ -12,7 +12,7 @@ public class Main {
 		
 		String oct = br.readLine();
 		
-		System.out.println(Integer.parseInt(oct,8));
+		System.out.println(Integer.toOctalString(Integer.parseInt(oct,16)));
 		
         br.close();
 	}
