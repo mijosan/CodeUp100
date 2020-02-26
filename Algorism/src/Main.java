@@ -10,12 +10,20 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		String hex = br.readLine();
-		
-		int a = Integer.parseInt(hex,16); //16진수로 인식하여 정수에 저장
-		
-		for(int i=1;i<=15;i++) { // toHexString을 사용하여 정수를 16진수로 표현
-			System.out.println((Integer.toHexString(a) + "*" + Integer.toHexString(i) + "=" + Integer.toHexString(a*i)).toUpperCase());
+		int n = Integer.parseInt(br.readLine());
+
+		for(int i=1;i<=n;i++) {
+			if(i%3==0) {
+				System.out.print("X");
+			}else {
+				System.out.print(i);
+			}
+			
+			if(i==n) {
+				
+			}else {
+				System.out.print(" ");
+			}		
 		}
 		
 		br.close();
