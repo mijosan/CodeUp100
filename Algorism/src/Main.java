@@ -11,16 +11,24 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		//StringTokenizer st = new StringTokenizer(br.readLine());
+
+		int n = Integer.parseInt(br.readLine());
 		
-		int h = Integer.parseInt(st.nextToken());
-		int b = Integer.parseInt(st.nextToken());
-		int c = Integer.parseInt(st.nextToken());
+		int sum = 0;
+		int sum2 = 1;
+		while(true) {
 		
-		double mb = ((double)h*b*c)/8/1024/1024;
-		System.out.println(String.format("%.2f MB", mb));
-		
-		br.close();
+			sum = sum + sum2;
+			
+			sum2 = sum2 + 1;
+			if(sum>=n) {
+				System.out.println(sum);
+				break;
+			}
+
+		}
+
 	}
 }
 
