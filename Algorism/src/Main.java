@@ -8,20 +8,21 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		//StringTokenizer st = new StringTokenizer(br.readLine());
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int n = Integer.parseInt(br.readLine());
-		
-		int sum = 0;
-		for(int i=1;i<=n;i++) {
+		while(st.hasMoreTokens()) {
 			
-			if(i%2 == 0) {
-				sum = sum + i;
+			String str = st.nextToken();
+			
+			
+			if(str.equals("q")){
+				System.out.println(str);
+				break;
 			}
+			
+			System.out.println(str);
+			
 		}
-		
-		System.out.println(sum);
-
         br.close();
 	}
 }
