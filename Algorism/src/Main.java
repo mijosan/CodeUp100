@@ -16,16 +16,16 @@ public class Main {
 		int n = Integer.parseInt(br.readLine());
 		
 		int sum = 0;
-		int sum2 = 1;
+		int count = 0;
 		while(true) {
-		
-			sum = sum + sum2;
-			
-			sum2 = sum2 + 1;
-			if(sum>=n) {
-				System.out.println(sum);
-				break;
+			sum = sum + 1;
+			count = count + 1;
+			if(sum%3==0) {
+				continue;
 			}
+			
+			System.out.print(sum + " ");
+			if(n == count) break;
 
 		}
 
