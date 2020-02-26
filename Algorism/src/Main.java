@@ -8,14 +8,12 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		while(st.hasMoreTokens()) {
-			String a = st.nextToken();
-			
-			if(a.equals("0")) break;
-			
-			System.out.println(a);
+		int n = Integer.parseInt(br.readLine());
+		
+		for(int i=0;i<n;i++) {
+			System.out.println(n-i);
 		}
 
         br.close();
