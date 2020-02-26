@@ -9,27 +9,18 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int r = Integer.parseInt(st.nextToken());
-		int g = Integer.parseInt(st.nextToken());
+		int h = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
+		int c = Integer.parseInt(st.nextToken());
+		int s = Integer.parseInt(st.nextToken());
 		
-		int sum = 0;
-		for(int i=0;i<r;i++) {
-			for(int j=0;j<g;j++) {
-				for(int k=0;k<b;k++) {
-					bw.write(i+" "+j+" "+k +"\n");
-					sum = sum + 1;
-				}
-			}
-		}
-		bw.write(sum + "");
-
+		double mb = ((double)h*b*c*s)/8/1024/1024;
+		System.out.println(String.format("%.1f MB", mb));
 		
-		bw.close();
 		br.close();
 	}
 }
