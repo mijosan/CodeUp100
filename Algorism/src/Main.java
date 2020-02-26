@@ -11,24 +11,19 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		//StringTokenizer st = new StringTokenizer(br.readLine());
+		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		int n = Integer.parseInt(br.readLine());
+		int a = Integer.parseInt(st.nextToken());
+		int d = Integer.parseInt(st.nextToken());
+		int n = Integer.parseInt(st.nextToken());
 		
-		int sum = 0;
-		int count = 0;
-		while(true) {
-			sum = sum + 1;
-			count = count + 1;
-			if(sum%3==0) {
-				continue;
-			}
-			
-			System.out.print(sum + " ");
-			if(n == count) break;
-
+		int sum = a;
+		
+		for(int i=1;i<n;i++) {
+			sum = sum + d;
 		}
-
+		System.out.println(sum);
+		
 	}
 }
 
