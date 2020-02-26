@@ -8,17 +8,15 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int a = Integer.parseInt(st.nextToken());
-		int b = Integer.parseInt(st.nextToken());
+		String hex = br.readLine();
 		
-		for(int i=1;i<=a;i++) {
-			for(int j=1;j<=b;j++) {
-				System.out.println(i + " " + j);
-			}
+		int a = Integer.parseInt(hex,16); //16진수로 인식하여 정수에 저장
+		
+		for(int i=1;i<=15;i++) { // toHexString을 사용하여 정수를 16진수로 표현
+			System.out.println((Integer.toHexString(a) + "*" + Integer.toHexString(i) + "=" + Integer.toHexString(a*i)).toUpperCase());
 		}
-		
 		
 		br.close();
 	}
