@@ -10,24 +10,14 @@ public class Main {
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int[] n = new int[st.countTokens()];
-		
-		int i = 0;
 		while(st.hasMoreTokens()) {
-		
-			n[i] = Integer.parseInt(st.nextToken());
+			String a = st.nextToken();
 			
-			i++;
+			if(a.equals("0")) break;
 			
-		}
-		
-		for(int a:n) {
-			if(a==0) {
-				break;
-			}
 			System.out.println(a);
 		}
-		
+
         br.close();
 	}
 }
