@@ -16,10 +16,9 @@ public class Main {
 		int h = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		int c = Integer.parseInt(st.nextToken());
-		int s = Integer.parseInt(st.nextToken());
 		
-		double mb = ((double)h*b*c*s)/8/1024/1024;
-		System.out.println(String.format("%.1f MB", mb));
+		double mb = ((double)h*b*c)/8/1024/1024;
+		System.out.println(String.format("%.2f MB", mb));
 		
 		br.close();
 	}
