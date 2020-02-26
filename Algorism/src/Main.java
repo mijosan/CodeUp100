@@ -8,26 +8,25 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		//StringTokenizer st = new StringTokenizer(br.readLine());
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
+		int[] n = new int[st.countTokens()];
 		
-		int n = Integer.parseInt(br.readLine());
+		int i = 0;
+		while(st.hasMoreTokens()) {
 		
-		switch(n) {
-		case 12: case 1: case 2:
-			System.out.println("winter");
-			break;
-		case 3: case 4: case 5:
-			System.out.println("spring");
-			break;
-		case 6: case 7: case 8:
-			System.out.println("summer");
-			break;
-		case 9: case 10: case 11:
-			System.out.println("fall");
-			break;
+			n[i] = Integer.parseInt(st.nextToken());
+			
+			i++;
+			
 		}
 		
+		for(int a:n) {
+			if(a==0) {
+				break;
+			}
+			System.out.println(a);
+		}
 		
         br.close();
 	}
