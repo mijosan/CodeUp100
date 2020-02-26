@@ -10,11 +10,10 @@ public class Main {
 		
 		//StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int n = Integer.parseInt(br.readLine());
-		
-		for(int i=0;i<n;i++) {
-			System.out.println(n-i-1);
-			
+		char c = br.readLine().charAt(0);
+
+		for(int i=97;i<=(int)c;i++) {
+			System.out.print((char)i + " ");
 		}
 
         br.close();
