@@ -13,7 +13,8 @@ public class Main {
 		int n = Integer.parseInt(br.readLine());
 		
 		for(int i=0;i<n;i++) {
-			System.out.println(n-i);
+			System.out.println(n-i-1);
+			
 		}
 
         br.close();
