@@ -11,27 +11,32 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		
+		int[][] arr = new int[20][20];
 		int n = Integer.parseInt(br.readLine());
-		StringTokenizer st = new StringTokenizer(br.readLine());
-
-		int[] arr = new int[n];
-	
-		int min = Integer.parseInt(st.nextToken());
-		int temp = 0;
-
-		while(st.hasMoreTokens()) {
+		
+		int x;
+		int y;
+		for(int i=0;i<n;i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
 			
-			temp = Integer.parseInt(st.nextToken());
+			x = Integer.parseInt(st.nextToken());
+			y = Integer.parseInt(st.nextToken());
 			
-			if(min>temp) {
-				min = temp;
-			}
+			arr[x][y] = 1; 
 			
 		}
 		
-		System.out.println(min);
+		
+		for(int i=1;i<arr.length;i++) {
+			for(int j=1;j<arr.length;j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
 
+		
+		
+		
 	}
 }
 
