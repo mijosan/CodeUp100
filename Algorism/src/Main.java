@@ -14,13 +14,14 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
 		Long a = Long.parseLong(st.nextToken());
+		Long m = Long.parseLong(st.nextToken());
 		Long d = Long.parseLong(st.nextToken());
 		Long n = Long.parseLong(st.nextToken());
 		
 		Long sum = a;
 		
 		for(int i=1;i<n;i++) {
-			sum = sum * d;
+			sum = sum * m + d;
 		}
 		System.out.println(sum);
 		
