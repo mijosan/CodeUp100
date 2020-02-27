@@ -14,17 +14,16 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
 		Long a = Long.parseLong(st.nextToken());
-		Long m = Long.parseLong(st.nextToken());
-		Long d = Long.parseLong(st.nextToken());
-		Long n = Long.parseLong(st.nextToken());
-		
-		Long sum = a;
-		
-		for(int i=1;i<n;i++) {
-			sum = sum * m + d;
+		Long b = Long.parseLong(st.nextToken());
+		Long c = Long.parseLong(st.nextToken());
+
+		int day = 1;
+		while(day%a!=0 || day%b!=0 || day%c!=0) {
+			
+			day++;
 		}
-		System.out.println(sum);
 		
+		System.out.println(day);
 	}
 }
 
