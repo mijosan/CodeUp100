@@ -10,43 +10,55 @@ public class Main {
 	public static void main(String[] args) throws IOException{	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		int[][] arr = new int[11][11];
 		
-		int h = Integer.parseInt(st.nextToken());
-		int w = Integer.parseInt(st.nextToken());
-		
-		int[][] arr = new int[h+1][w+1];
-		
-		
-		st = new StringTokenizer(br.readLine());
-		
-		int n = Integer.parseInt(st.nextToken());
-		
-		for(int i=0;i<n;i++) {
-			st = new StringTokenizer(br.readLine());
-			
-			int l = Integer.parseInt(st.nextToken()); //길이
-			int d = Integer.parseInt(st.nextToken()); //방향 0:가로 1:세로
-			int x = Integer.parseInt(st.nextToken()); //x축
-			int y = Integer.parseInt(st.nextToken()); //y축
-			
-			for(int j=0;j<l;j++) {
-				if(d==0) { //가로
-					arr[x][y] = 1;		
-					y++;
-				}else { //세로
-					arr[x][y] = 1;		
-					x++;
+		for(int i=1;i<11;i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			for(int j=1;j<11;j++) {			
+				arr[i][j] = Integer.parseInt(st.nextToken());
+				
+			}
+		}
+		int temp = 0;
+		boolean flag = false;
+		breakOut :
+		while(true) {
+			for(int i=2;i<10;i++) {
+				for(int j=2;j<10;j++) {
+					
+					if(flag == true) {
+						j = temp;
+					}
+					
+					if(arr[i][j] == 2) { //먹이 찾았을때
+						arr[i][j] = 9;
+						break breakOut;
+					}
+					
+					if(arr[i][j] == 0) {
+						arr[i][j] = 9;
+						flag = false;
+						if(arr[i][j+1] == 1) {
+							temp = j;
+							flag = true;
+							break;
+						}
+					}
 				}
-			}		
+			}
+			break;
 		}
 		
-		for(int i=1;i<h+1;i++) {
-			for(int j=1;j<w+1;j++) {
-				System.out.print(arr[i][j]+" ");
+		
+		for(int i=1;i<11;i++) {
+			for(int j=1;j<11;j++) {
+				System.out.print(arr[i][j] + " ");
 			}
 			System.out.println();
 		}
+		
+		
+		
 	}
 }
 
