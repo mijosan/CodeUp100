@@ -11,19 +11,22 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
+		
+		int n = Integer.parseInt(br.readLine());
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		Long a = Long.parseLong(st.nextToken());
-		Long b = Long.parseLong(st.nextToken());
-		Long c = Long.parseLong(st.nextToken());
-
-		int day = 1;
-		while(day%a!=0 || day%b!=0 || day%c!=0) {
+		int[] count = new int[24];
+		
+		while(st.hasMoreTokens()) {
+			int temp = Integer.parseInt(st.nextToken());
 			
-			day++;
+			count[temp] = count[temp] + 1;
 		}
 		
-		System.out.println(day);
+		for(int i=1;i<count.length;i++) {
+			System.out.print(count[i] + " ");
+		}
+
 	}
 }
 
