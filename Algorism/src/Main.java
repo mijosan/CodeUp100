@@ -15,16 +15,17 @@ public class Main {
 		int n = Integer.parseInt(br.readLine());
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		int[] count = new int[24];
-		
+		int[] arr = new int[n];
+		int count = 1;
 		while(st.hasMoreTokens()) {
-			int temp = Integer.parseInt(st.nextToken());
 			
-			count[temp] = count[temp] + 1;
+			arr[arr.length-count] = Integer.parseInt(st.nextToken());
+			count = count + 1;
+			
 		}
 		
-		for(int i=1;i<count.length;i++) {
-			System.out.print(count[i] + " ");
+		for(int i:arr) {
+			System.out.print(i + " ");
 		}
 
 	}
