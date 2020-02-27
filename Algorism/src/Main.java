@@ -16,17 +16,21 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
 		int[] arr = new int[n];
-		int count = 1;
+	
+		int min = Integer.parseInt(st.nextToken());
+		int temp = 0;
+
 		while(st.hasMoreTokens()) {
 			
-			arr[arr.length-count] = Integer.parseInt(st.nextToken());
-			count = count + 1;
+			temp = Integer.parseInt(st.nextToken());
+			
+			if(min>temp) {
+				min = temp;
+			}
 			
 		}
 		
-		for(int i:arr) {
-			System.out.print(i + " ");
-		}
+		System.out.println(min);
 
 	}
 }
